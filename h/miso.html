@@ -13,15 +13,22 @@
     <!-- Header -->
     <header class="header">
         <div class="header-content">
+            <div class="mobile-nav-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
-            <nav class="nav">
+            <nav class="nav main-nav">
                 <a href="../index.html">ITAMI</a>
                 <a href="miso.html">MISO</a>
                 <a href="koji.html">KOJI</a>
                 <a href="food.html">SUPERMARKETS</a>
                 <a href="other.html">OTHER</a>
             </nav>
-
+        </div>
 
     </header>
 
@@ -90,7 +97,7 @@
         </div>
 
         <!-- Article Content -->
-        <div class="article-content">
+        <div class="miso-brands">
 
 
             <h3>
@@ -163,8 +170,7 @@
                         target="_blank">https://www.8miso.co.jp/</a></li>
             </ol>
 
-
-            </section>
+</div>
 
 
             <div class="related-box">
@@ -194,11 +200,12 @@
 
             <p>ROAD: Itami Airport is directly connected to the Hanshin Expressway Ikeda Route and is five minutes'
                 drive from the Chugoku Expressway, making it possible to reach central Osaka by car or bus in 25 to 30
-                minutes, central Kobe in 40 minutes and central Kyoto in 55 minutes.</p>
-        </div>
+        minutes, central Kobe in 40 minutes and central Kyoto in 55 minutes.</p>
+    <!-- keep .container open so follow-section stays inside -->
 
 
-        <!-- Follow Section -->
+       
+ <!-- Follow Section -->
         <div class="follow-section">
             <h3>Follow topics and authors</h3>
             <p>from this story to see more like this in your personalized homepage feed and to receive email updates.
@@ -215,17 +222,18 @@
             <!-- More in Stream -->
             <div class="more-stream">
                 <div class="stream-header">
-                    <h3>MORE IN THIS STREAM</h3>
-                    <a href="#" class="see-all">SEE ALL</a>
+                    <h3>Cooked Perplexity Answers</h3>
+
                 </div>
 
                 <div class="stream-articles">
                     <article class="stream-article">
-                        <h4><a href="#">Watch me unlock a smart lock using Aliro.</a></h4>
+                        <h4><a href="https://www.perplexity.ai/search/get-me-directions-from-itami-o-DeUFPgkKR7aw51yrrlMJkw#0"
+                                onclick="openMinimalPopup(this.href); return false;">Getting to town.</a></h4>
                         <div class="article-meta-small">
-                            <span class="author">JENNIFER PATTISON TUOHY</span>
-                            <span class="date">SEP 8</span>
-                            <span class="comments">7</span>
+                            <span class="author">Dingo</span>
+                            <span class="date">SEP 14</span>
+
                         </div>
                     </article>
 
@@ -249,7 +257,13 @@
             </div>
         </div>
 
-        <!-- Map Modal -->
+
+
+
+
+    </div>
+
+    <!-- Map Modal -->
         <div id="mapModal" class="image-modal" onclick="closeMapModal()">
             <div class="modal-content">
                 <span class="close-btn" onclick="closeMapModal()">&times;</span>
@@ -287,6 +301,33 @@
                 if (event.key === 'Escape') {
                     closeMapModal();
                 }
+            });
+        </script>
+
+        <script>
+            // Hamburger menu functionality (same as index.html)
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const body = document.body;
+                if (menuToggle) {
+                    menuToggle.addEventListener('click', function() {
+                        body.classList.toggle('menu-open');
+                    });
+                }
+                // Close menu when a nav link is clicked (mobile UX)
+                document.querySelectorAll('nav.main-nav a').forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        body.classList.remove('menu-open');
+                        setTimeout(function() {}, 50);
+                    });
+                });
+                document.addEventListener('click', function(e) {
+                    if (body.classList.contains('menu-open') &&
+                        !e.target.closest('nav.main-nav') &&
+                        !e.target.closest('#menu-toggle')) {
+                        body.classList.remove('menu-open');
+                    }
+                });
             });
         </script>
 

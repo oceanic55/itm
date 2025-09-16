@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links for December | Osaka</title>
+    <title>Tadao Ando</title>
     <link rel="stylesheet" href="../src/styles.css">
     <link rel="stylesheet" href="../fonts/fonts.css">
 </head>
@@ -13,8 +13,15 @@
     <!-- Header -->
     <header class="header">
         <div class="header-content">
+            <div class="mobile-nav-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
-            <nav class="nav">
+            <nav class="nav main-nav">
                 <a href="../index.html">ITAMI</a>
                 <a href="miso.html">MISO</a>
                 <a href="koji.html">KOJI</a>
@@ -22,6 +29,7 @@
                 <a href="other.html">OTHER</a>
             </nav>
 
+        </div>
 
     </header>
 
@@ -238,6 +246,33 @@
                 }
             });
         </script>
+
+            <script>
+                // Hamburger menu functionality (same as index.html)
+                document.addEventListener('DOMContentLoaded', function() {
+                    const menuToggle = document.getElementById('menu-toggle');
+                    const body = document.body;
+                    if (menuToggle) {
+                        menuToggle.addEventListener('click', function() {
+                            body.classList.toggle('menu-open');
+                        });
+                    }
+                    // Close menu when a nav link is clicked (mobile UX)
+                    document.querySelectorAll('nav.main-nav a').forEach(function(link) {
+                        link.addEventListener('click', function(e) {
+                            body.classList.remove('menu-open');
+                            setTimeout(function() {}, 50);
+                        });
+                    });
+                    document.addEventListener('click', function(e) {
+                        if (body.classList.contains('menu-open') &&
+                            !e.target.closest('nav.main-nav') &&
+                            !e.target.closest('#menu-toggle')) {
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                });
+            </script>
 
 </body>
 

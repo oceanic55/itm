@@ -398,7 +398,40 @@ body {
 .facebook-btn {
     color: #1877f2;
     font-size: 14px;
+}
+/* Compact article table styles: simple grid with vertical lines */
+.table-responsive { overflow-x: auto; }
+.article-content .compact-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px; /* reduced to fit article flow */
+    margin: 18px 0;
+    border: 1px solid #e6e6e6; /* outer border */
+}
+.article-content .compact-table caption {
     font-weight: 700;
+    text-align: left;
+    margin-bottom: 8px;
+    caption-side: top;
+    padding: 6px 0;
+}
+.article-content .compact-table th,
+.article-content .compact-table td {
+    border: 1px solid #e6e6e6; /* vertical + horizontal lines */
+    padding: 10px 12px;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal; /* allow wrapping like the attached image */
+}
+.article-content .compact-table thead th {
+    background: #f7f7f7;
+    font-weight: 700;
+}
+.article-content .compact-table tbody tr:nth-child(even) td {
+    background: #ffffff; /* keep rows simple and clean */
+}
+.article-content .compact-table td {
+    word-break: break-word;
 }
 
 .threads-btn {
@@ -525,6 +558,20 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
+}
+
+/* Make h3 inside article-content match the follow-section heading size/weight */
+.article-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
+    color: #000;
+}
+
+/* Ensure article headings use the same sans-serif font as the follow-section/body */
+.article-content h3 {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .article-content p {
@@ -767,6 +814,22 @@ body {
     }
 
     .author-name {
+
+/* Make all h3 visually match an h5 (smaller) for a compact heading scale.
+   Exclude .article-title and .article-subtitle so the page title keeps its large size. */
+h3:not(.article-title):not(.article-subtitle) {
+    font-size: 15px; /* h5-like size (approx) */
+    line-height: 1.3;
+    font-weight: 600;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+@media (max-width: 480px) {
+    h3:not(.article-title):not(.article-subtitle) {
+        font-size: 14px;
+    }
+}
         font-size: 14px;
         font-weight: 700;
     }

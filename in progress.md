@@ -1,5 +1,9 @@
 https://artsandculture.google.com/explore/collections/tadao-ando-architect-associates?c=assets&f=location:/m/0dqyw
 
+all works:
+
+https://japan-architect.jimdofree.com/japanese-architects/ando-tadao-%E5%AE%89%E8%97%A4%E5%BF%A0%E9%9B%84/
+
 
 # 4
 

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row House</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="mobile-nav-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav class="nav main-nav">
+                <a href="../index.html">ITAMI</a>
+                <a href="miso.html">MISO</a>
+                <a href="koji.html">KOJI</a>
+                <a href="food.html">SUPERMARKETS</a>
+                <a href="ando.html">ANDO</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Article Tags -->
+        <div class="article-tags">
+            <a href="#" class="tag">+ Houses</a>
+            <a href="#" class="tag">+ Museums</a>
+            <a href="#" class="tag">+ Temples</a>
+        </div>
+
+        <!-- Article Header -->
+        <header class="article-header">
+            <h1 class="article-title">Row House, Sumiyoshi, Osaka</h1>
+            <h2 class="article-subtitle">Design: January – August 1975
+Construction: October 1975 – February 1976
+2 Chome-13-12 Sumiyoshi, Sumiyoshi Ward, Osaka</h2>
+
+            <div class="article-meta">
+                <div class="byline">
+                    <span class="byline-by">by</span>
+                    <span class="plus-icon">
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Follow">
+                            <path d="M5 0H4V4H0V5H4V9H5V5H9V4H5V0Z" fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    <a href="https://maps.app.goo.gl/nPnNfwrokcb8RLf97" class="author-name" target="_blank">Osaka</a>
+                </div>
+                <time class="date">Sep 18, 2025, 14:03</time>
+            </div>
+
+
+            
+            
+        </header>
+
+           <!-- ex Hero Map -->
+        <figure class="hero-image">
+            <div class="image-container clickable-image" onclick="openMapModal()">
+                <img src="../img/row.jpg" alt="Miso" width="100%" style="border-radius: 8px;">
+            </div>
+            <figcaption>
+                <em> </em>
+            </figcaption>
+        </figure>
+
+        <!-- Author Bio -->
+        <div class="author-bio">
+            <div class="author-avatar-placeholder">ROW</div>
+            <div class="author-info"><p>
+                <a href="https://maps.app.goo.gl/nPnNfwrokcb8RLf97" class="author-name">+ Row House</a>
+                <span>  1975 Construction: October 1975 – February 1976</p><p> 2 Chome-13-12 Sumiyoshi, Sumiyoshi Ward, Osaka</p> </span>
+                .
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="article-content">
+
+
+            <p>Inserted into a narrow street of row houses located in the southern Osaka district of Sumiyoshi, this residence is immediately noticeable because of its blank concrete facade punctuated only by a doorway. Within, the plan divides the spaces into three equal rectangular spaces. The space nearest the doorway contains the living room at ground level, and a bedroom above. Black slate floors and concrete walls define the interior spaces, and confirm the impression of austerity announced by the facade. The central area is open to the sky, with a stairway leading up to the bedrooms, and an overhead bridge. The final space contains the kitchen and bathroom below, and the master bedroom above. The open central courtyard permits residents to live with the rhythms of nature, while excluding the rather chaotic urban environment. Despite the small scale of this building (site area: 37.3 m²; building area: 35.7 m²; total floor area: 64.7 m²), it clearly defines a number of the elements of Tadao Ando's mature style.</p>
+
+
+            <div class="related-box">
+                <h3>Related</h3>
+                <ul>
+                    <li>• <a href="https://archeyes.com/row-house-by-tadao-ando-azuma-house-light-space-concrete/" target="_blank">Row House by Tadao Ando</a></li>
+                    <li>• <a href="https://artsandculture.google.com/story/row-house-in-sumiyoshi-a-stronghold-for-the-independent-urban-dweller-tadao-ando-architect-associates/RgXR5cYQ-WUWEw?hl=en">Row House in Sumiyoshi</a></li>
+                    <li>• <a href="https://en.wikiarquitectura.com/building/azuma-house-row-house/#">Azuma House</a></li>
+                </ul>
+            </div>
+
+   
+
+
+            
+
+        <!-- Map Modal -->
+        <div id="mapModal" class="image-modal" onclick="closeMapModal()">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeMapModal()">&times;</span>
+                <div class="modal-map-container">
+                    <iframe id="modalMap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.8!2d135.43835243554372!3d34.79133319507912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ3JzI4LjgiTiAxMzXCsDI2JzE4LjEiRQ!5e0!3m2!1sen!2s!4v1694700000000!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0; border-radius: 8px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            function openMapModal() {
+                const modal = document.getElementById('mapModal');
+                modal.style.display = 'flex';
+
+                // Prevent body scroll when modal is open
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMapModal() {
+                const modal = document.getElementById('mapModal');
+                modal.style.display = 'none';
+
+                // Restore body scroll
+                document.body.style.overflow = 'auto';
+            }
+
+            // Close modal when pressing Escape key
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeMapModal();
+                }
+            });
+        </script>
+
+            <script>
+                // Hamburger menu functionality (same as index.html)
+                document.addEventListener('DOMContentLoaded', function() {
+                    const menuToggle = document.getElementById('menu-toggle');
+                    const body = document.body;
+                    if (menuToggle) {
+                        menuToggle.addEventListener('click', function() {
+                            body.classList.toggle('menu-open');
+                        });
+                    }
+                    // Close menu when a nav link is clicked (mobile UX)
+                    document.querySelectorAll('nav.main-nav a').forEach(function(link) {
+                        link.addEventListener('click', function(e) {
+                            body.classList.remove('menu-open');
+                            setTimeout(function() {}, 50);
+                        });
+                    });
+                    document.addEventListener('click', function(e) {
+                        if (body.classList.contains('menu-open') &&
+                            !e.target.closest('nav.main-nav') &&
+                            !e.target.closest('#menu-toggle')) {
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                });
+            </script>
+
+</body>
+
+</html>

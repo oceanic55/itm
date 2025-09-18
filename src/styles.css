@@ -1,6 +1,7 @@
 /* --- Responsive Hamburger Menu (desktop-first) --- */
 .mobile-nav-toggle {
-    display: none; /* hidden on desktop */
+    display: none;
+    /* hidden on desktop */
     position: fixed;
     top: 15px;
     left: 15px;
@@ -32,9 +33,11 @@
 .menu-open #menu-toggle span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .menu-open #menu-toggle span:nth-child(2) {
     opacity: 0;
 }
+
 .menu-open #menu-toggle span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -44,44 +47,65 @@
     .mobile-nav-toggle {
         display: block;
     }
+
     .nav.main-nav {
         position: fixed;
-        top: 60px; /* sit below the header */
-        left: 0; /* anchor to left edge, hide with transform */
-    /* fully hide off-screen (avoid any visible edge / shadow bleed) */
-    transform: translateX(calc(-100% - 48px));
-    /* no shadow while closed */
-    box-shadow: none;
+        top: 60px;
+        /* sit below the header */
+        left: 0;
+        /* anchor to left edge, hide with transform */
+        /* fully hide off-screen (avoid any visible edge / shadow bleed) */
+        transform: translateX(calc(-100% - 48px));
+        /* no shadow while closed */
+        box-shadow: none;
         will-change: transform;
         width: 320px;
         height: auto;
         max-height: calc(100vh - 80px);
         background: #fff;
-    z-index: 6001;
+        z-index: 6001;
         padding: 12px 1.5rem 12px 1.5rem;
-    overflow-y: auto;
+        overflow-y: auto;
         flex-direction: column;
         gap: 12px;
         align-items: flex-start;
         display: flex;
-    transition: transform 120ms cubic-bezier(.4,0,.2,1);
+        transition: transform 120ms cubic-bezier(.4, 0, .2, 1);
         border-radius: 0 12px 12px 0;
     }
+
     /* slide in using translateX */
-    body.menu-open .nav.main-nav { transform: translateX(0); box-shadow: 2px 0 24px rgba(0,0,0,0.13); pointer-events: auto; }
+    body.menu-open .nav.main-nav {
+        transform: translateX(0);
+        box-shadow: 2px 0 24px rgba(0, 0, 0, 0.13);
+        pointer-events: auto;
+    }
+
     /* make sure the main-nav is visible when menu is open */
-    body.menu-open .nav.main-nav { display: flex; }
+    body.menu-open .nav.main-nav {
+        display: flex;
+    }
+
     body.menu-open::before {
         content: "";
         position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background-color: transparent; /* don't dim the page */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        /* don't dim the page */
         /* keep overlay behind the nav */
         z-index: 5000;
         /* don't intercept clicks — click-outside is handled by JS */
         pointer-events: none;
     }
-    .nav { margin-left: 0; gap: 0; }
+
+    .nav {
+        margin-left: 0;
+        gap: 0;
+    }
+
     .nav a {
         font-size: 1.1rem;
         padding: 14px 0;
@@ -92,6 +116,7 @@
         letter-spacing: 0.04em;
         color: #111;
     }
+
     /* Disable hover highlight for mobile floating nav links */
     .nav.main-nav a:hover {
         background: transparent !important;
@@ -101,9 +126,15 @@
     }
 
     /* ensure nav and links accept pointer events and sit above the overlay */
-    .nav.main-nav { pointer-events: auto; }
-    .nav.main-nav a { pointer-events: auto; }
+    .nav.main-nav {
+        pointer-events: auto;
+    }
+
+    .nav.main-nav a {
+        pointer-events: auto;
+    }
 }
+
 /* Reset */
 * {
     margin: 0;
@@ -399,15 +430,22 @@ body {
     color: #1877f2;
     font-size: 14px;
 }
+
 /* Compact article table styles: simple grid with vertical lines */
-.table-responsive { overflow-x: auto; }
+.table-responsive {
+    overflow-x: auto;
+}
+
 .article-content .compact-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px; /* reduced to fit article flow */
+    font-size: 13px;
+    /* reduced to fit article flow */
     margin: 18px 0;
-    border: 1px solid #e6e6e6; /* outer border */
+    border: 1px solid #e6e6e6;
+    /* outer border */
 }
+
 .article-content .compact-table caption {
     font-weight: 700;
     text-align: left;
@@ -415,21 +453,28 @@ body {
     caption-side: top;
     padding: 6px 0;
 }
+
 .article-content .compact-table th,
 .article-content .compact-table td {
-    border: 1px solid #e6e6e6; /* vertical + horizontal lines */
+    border: 1px solid #e6e6e6;
+    /* vertical + horizontal lines */
     padding: 10px 12px;
     vertical-align: middle;
     text-align: left;
-    white-space: normal; /* allow wrapping like the attached image */
+    white-space: normal;
+    /* allow wrapping like the attached image */
 }
+
 .article-content .compact-table thead th {
     background: #f7f7f7;
     font-weight: 700;
 }
+
 .article-content .compact-table tbody tr:nth-child(even) td {
-    background: #ffffff; /* keep rows simple and clean */
+    background: #ffffff;
+    /* keep rows simple and clean */
 }
+
 .article-content .compact-table td {
     word-break: break-word;
 }
@@ -558,6 +603,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
+    text-decoration: none;
 }
 
 /* Make h3 inside article-content match the follow-section heading size/weight */
@@ -633,7 +679,8 @@ body {
     padding: 7px;
     margin: 20px 0;
     overflow: hidden;
-    font-size: 13px; /* force 10px for all text inside */
+    font-size: 13px;
+    /* force 10px for all text inside */
 }
 
 .miso-brands h3 {
@@ -647,7 +694,8 @@ body {
 
 .miso-brands ol {
     margin: 0;
-    padding-left: 1.2rem; /* keep numbers inside the container */
+    padding-left: 1.2rem;
+    /* keep numbers inside the container */
     font-size: 13px;
     line-height: 1.45;
 }
@@ -695,8 +743,9 @@ body {
 
 .follow-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
+    align-items: flex-start;
 }
 
 .follow-tag {
@@ -815,21 +864,23 @@ body {
 
     .author-name {
 
-/* Make all h3 visually match an h5 (smaller) for a compact heading scale.
+        /* Make all h3 visually match an h5 (smaller) for a compact heading scale.
    Exclude .article-title and .article-subtitle so the page title keeps its large size. */
-h3:not(.article-title):not(.article-subtitle) {
-    font-size: 15px; /* h5-like size (approx) */
-    line-height: 1.3;
-    font-weight: 600;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-}
+        h3:not(.article-title):not(.article-subtitle) {
+            font-size: 15px;
+            /* h5-like size (approx) */
+            line-height: 1.3;
+            font-weight: 600;
+            margin-top: 0.6em;
+            margin-bottom: 0.6em;
+        }
 
-@media (max-width: 480px) {
-    h3:not(.article-title):not(.article-subtitle) {
-        font-size: 14px;
-    }
-}
+        @media (max-width: 480px) {
+            h3:not(.article-title):not(.article-subtitle) {
+                font-size: 14px;
+            }
+        }
+
         font-size: 14px;
         font-weight: 700;
     }
@@ -1039,20 +1090,88 @@ h3:not(.article-title):not(.article-subtitle) {
 
 /* Strong final override for mobile nav behavior */
 @media (max-width: 900px) {
+
     /* Make sure overlay stays behind the nav and links are clickable */
-    .mobile-nav-toggle { display: block !important; z-index: 7000 !important; }
-    nav.main-nav { display: flex !important; position: fixed !important; left: 0 !important; top: 60px !important; transform: translateX(calc(-100% - 48px)) !important; width: 320px !important; height: auto !important; max-height: calc(100vh - 80px) !important; overflow-y: auto !important; z-index: 7002 !important; transition: transform 120ms cubic-bezier(.4,0,.2,1) !important; box-shadow: none !important; pointer-events: auto !important; }
-    body.menu-open nav.main-nav { transform: translateX(0) !important; box-shadow: 2px 0 24px rgba(0,0,0,0.13) !important; pointer-events: auto !important; }
-    body.menu-open::before { content: ""; position: fixed; top:0; left:0; right:0; bottom:0; background: transparent; /* behind the nav */ z-index:6000 !important; pointer-events: none !important; }
-    body.menu-open { overflow: hidden !important; }
-    nav.main-nav a { display: block !important; color: #111 !important; font-weight:700 !important; padding: 14px 10px !important; position: relative; z-index: 7003 !important; pointer-events: auto !important; cursor: pointer !important; }
+    .mobile-nav-toggle {
+        display: block !important;
+        z-index: 7000 !important;
+    }
+
+    nav.main-nav {
+        display: flex !important;
+        position: fixed !important;
+        left: 0 !important;
+        top: 60px !important;
+        transform: translateX(calc(-100% - 48px)) !important;
+        width: 320px !important;
+        height: auto !important;
+        max-height: calc(100vh - 80px) !important;
+        overflow-y: auto !important;
+        z-index: 7002 !important;
+        transition: transform 120ms cubic-bezier(.4, 0, .2, 1) !important;
+        box-shadow: none !important;
+        pointer-events: auto !important;
+    }
+
+    body.menu-open nav.main-nav {
+        transform: translateX(0) !important;
+        box-shadow: 2px 0 24px rgba(0, 0, 0, 0.13) !important;
+        pointer-events: auto !important;
+    }
+
+    body.menu-open::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        /* behind the nav */
+        z-index: 6000 !important;
+        pointer-events: none !important;
+    }
+
+    body.menu-open {
+        overflow: hidden !important;
+    }
+
+    nav.main-nav a {
+        display: block !important;
+        color: #111 !important;
+        font-weight: 700 !important;
+        padding: 14px 10px !important;
+        position: relative;
+        z-index: 7003 !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
+    }
+
     /* remove hover effects while menu is open / on mobile */
-    nav.main-nav a:hover { background: transparent !important; color: #111 !important; text-decoration: none !important; border-bottom-color: transparent !important; }
-    #menu-toggle span { background: #111 !important; }
-    .menu-open #menu-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg) !important; }
-    .menu-open #menu-toggle span:nth-child(2) { opacity: 0 !important; }
-    .menu-open #menu-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg) !important; }
+    nav.main-nav a:hover {
+        background: transparent !important;
+        color: #111 !important;
+        text-decoration: none !important;
+        border-bottom-color: transparent !important;
+    }
+
+    #menu-toggle span {
+        background: #111 !important;
+    }
+
+    .menu-open #menu-toggle span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg) !important;
+    }
+
+    .menu-open #menu-toggle span:nth-child(2) {
+        opacity: 0 !important;
+    }
+
+    .menu-open #menu-toggle span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg) !important;
+    }
 }
+
 @media (min-width: 1025px) {
     .container {
         max-width: 680px;
@@ -1089,10 +1208,19 @@ h3:not(.article-title):not(.article-subtitle) {
         border-radius: 0 !important;
         margin-left: 40px !important;
     }
-    .mobile-nav-toggle { display: none !important; }
+
+    .mobile-nav-toggle {
+        display: none !important;
+    }
+
     /* allow body scroll on desktop even if menu-open was left set */
-    body.menu-open { overflow: auto !important; }
-    body.menu-open::before { display: none !important; }
+    body.menu-open {
+        overflow: auto !important;
+    }
+
+    body.menu-open::before {
+        display: none !important;
+    }
 }
 
 /* Large Desktop */

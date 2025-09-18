@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row House</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="mobile-nav-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav class="nav main-nav">
+                <a href="../index.html">ITAMI</a>
+                <a href="miso.html">MISO</a>
+                <a href="koji.html">KOJI</a>
+                <a href="food.html">SUPERMARKETS</a>
+                <a href="ando.html">ANDO</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Article Tags -->
+        <div class="article-tags">
+            <a href="#" class="tag">+ Houses</a>
+            <a href="#" class="tag">+ Museums</a>
+            <a href="#" class="tag">+ Temples</a>
+        </div>
+
+        <!-- Article Header -->
+        <header class="article-header">
+            <h1 class="article-title">Koshino House</h1>
+
+
+
+            <h2 class="article-subtitle">Tadao Ando Architect & Associates | Classics on Architecture Lab</h2>
+
+            <div class="article-meta">
+                <div class="byline">
+                    <span class="byline-by">by</span>
+                    <span class="plus-icon">
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Follow">
+                            <path d="M5 0H4V4H0V5H4V9H5V5H9V4H5V0Z" fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    <a href="https://maps.app.goo.gl/nPnNfwrokcb8RLf97" class="author-name" target="_blank">Osaka</a>
+                </div>
+                <time class="date">Sep 18, 2025, 14:03</time>
+            </div>
+
+
+            
+            
+        </header>
+
+           <!-- ex Hero Map -->
+        <figure class="hero-image">
+            <div class="image-container clickable-image" onclick="openMapModal()">
+                <img src="../img/koshi.jpg" alt="Miso" width="100%" style="border-radius: 8px;">
+            </div>
+            <figcaption>
+                <em> </em>
+            </figcaption>
+        </figure>
+
+        <!-- Author Bio -->
+        <div class="author-bio">
+            <div class="author-avatar-placeholder">ROW</div>
+            <div class="author-info"><p>
+                <a href="https://maps.app.goo.gl/nPnNfwrokcb8RLf97" class="author-name">+ Koshino House</a>
+                <span>Architects: Tadao Ando Architect & Associates
+Area: 242 m²
+Year: 1984
+Photography: Kazunori Fujimoto
+Lead Architect: Tadao Ando
+Client: Hiroko Koshino
+City: Ashiya
+Country: Japan</p> </span>
+                .
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="article-content">
+
+
+            <p>Koshino House, a residential building designed by Tadao Ando Architect & Associates in Ashiya, Japan, integrates into the sloping terrain of a national park. Completed in 1984, the design harmonizes with the environment while employing concrete forms to manipulate light and create dynamic spaces.</p>
+
+<p></p>Tadao Ando’s design for Koshino House features two parallel concrete rectangular volumes. These forms are partially embedded into the sloping ground of a national park, forming a compositional addition to the landscape. The structure is placed to avoid disturbing the existing trees, integrating with the ecosystem while manipulating light to engage with nature.</p>
+
+
+            <div class="related-box">
+                <h3>Related</h3>
+                <ul>
+                    <li>• <a href="https://www.re-thinkingthefuture.com/designing-for-typologies/a4869-koshino-house-by-tadao-ando-the-play-of-light/" target="_blank">The play of Light</a></li>
+                    <li>• <a href="https://archeyes.com/koshino-house-by-tadao-ando-concrete-light-and-spatial-restraint/">Concrete, Light, and Spatial Restraint</a></li>
+                    <li>• <a href="https://www.architecturelab.net/architecture-classics-koshino-house-tadao-ando-architect-and-associates/">Koshino House / Tadao Ando</a></li>
+
+<li>• <a href="https://architectuul.com/architecture/koshino-house">Koshino House | architectuul</a></li>
+
+
+
+                </ul>
+            </div>
+
+   
+
+
+            
+
+        <!-- Map Modal -->
+        <div id="mapModal" class="image-modal" onclick="closeMapModal()">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeMapModal()">&times;</span>
+                <div class="modal-map-container">
+                    <iframe id="modalMap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.8!2d135.43835243554372!3d34.79133319507912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ3JzI4LjgiTiAxMzXCsDI2JzE4LjEiRQ!5e0!3m2!1sen!2s!4v1694700000000!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0; border-radius: 8px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            function openMapModal() {
+                const modal = document.getElementById('mapModal');
+                modal.style.display = 'flex';
+
+                // Prevent body scroll when modal is open
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMapModal() {
+                const modal = document.getElementById('mapModal');
+                modal.style.display = 'none';
+
+                // Restore body scroll
+                document.body.style.overflow = 'auto';
+            }
+
+            // Close modal when pressing Escape key
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeMapModal();
+                }
+            });
+        </script>
+
+            <script>
+                // Hamburger menu functionality (same as index.html)
+                document.addEventListener('DOMContentLoaded', function() {
+                    const menuToggle = document.getElementById('menu-toggle');
+                    const body = document.body;
+                    if (menuToggle) {
+                        menuToggle.addEventListener('click', function() {
+                            body.classList.toggle('menu-open');
+                        });
+                    }
+                    // Close menu when a nav link is clicked (mobile UX)
+                    document.querySelectorAll('nav.main-nav a').forEach(function(link) {
+                        link.addEventListener('click', function(e) {
+                            body.classList.remove('menu-open');
+                            setTimeout(function() {}, 50);
+                        });
+                    });
+                    document.addEventListener('click', function(e) {
+                        if (body.classList.contains('menu-open') &&
+                            !e.target.closest('nav.main-nav') &&
+                            !e.target.closest('#menu-toggle')) {
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                });
+            </script>
+
+</body>
+
+</html>

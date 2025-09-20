@@ -439,6 +439,21 @@ body {
     text-decoration: underline;
 }
 
+/* Flexible link class for additional links with different targets */
+.flexible-link1 {
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.flexible-link1:hover {
+    text-decoration: underline;
+    color: #5b21b6;
+}
+
 .date {
     color: #666;
     font-size: 13px;

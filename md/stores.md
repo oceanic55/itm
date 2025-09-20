@@ -19,14 +19,7 @@ Life Daikokucho
 
 https://maps.apple.com/place?address=4-1,%20Shikitsunishi%201-Ch%C5%8Dme,%20Naniwa,%20Osaka,%20Osaka,%20Japan%20556-0015&coordinate=34.658024,135.496496&name=Life%20Daikokucho-Shop&place-id=IDBC2ACD7BDCB658&map=explore
 
-# 3
-takashimaya
 
-https://www.takashimaya.co.jp/osaka/
-
-https://maps.apple.com/place?address=%E3%80%92542-8510%0A%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%0A%E9%9B%A3%E6%B3%A25%E4%B8%81%E7%9B%AE1-5&coordinate=34.664348,135.501366&name=Osaka%20Takashimaya&place-id=I694B2F33D8D19FBD&map=explore
-
-https://maps.apple.com/place?address=%E3%80%92542-8510%0A%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%0A%E9%9B%A3%E6%B3%A25%E4%B8%81%E7%9B%AE1-5&coordinate=34.664348,135.501366&name=Osaka%20Takashimaya&place-id=I694B2F33D8D19FBD&map=explore
 
 # 4
 
@@ -38,9 +31,15 @@ https://maps.apple.com/place?address=4-13,%20Nippombashinishi%201-Ch%C5%8Dme,%20
 
 https://maps.apple.com/place?address=1-9,%20Nippombashi%202-Ch%C5%8Dme,%20Chuo,%20Osaka,%20Osaka,%20Japan%20542-0073&coordinate=34.664558,135.508698&name=Gyomu%20Super&place-id=I8E8F0C420A5F7DE8&map=explore
 
-# 5 IKARI JR Osaka
+# 5 
+
+IKARI 
+
+IKARI JR Osaka
 
 https://maps.apple.com/place?address=1-1,%20Umeda%203-Ch%C5%8Dme,%20Kita,%20Osaka,%20Osaka,%20Japan%20530-0001&coordinate=34.703334,135.497318&name=Ikari%20JR%20Osaka%20store&place-id=I8D55257DD15945FF&map=explore
+
+https://www.ikarisuper-shop.com/
 
 # 6
 

@@ -5,9 +5,17 @@ all works:
 https://japan-architect.jimdofree.com/japanese-architects/ando-tadao-%E5%AE%89%E8%97%A4%E5%BF%A0%E9%9B%84/
 
 
+https://www.liquisearch.com/tadao_ando/buildings_and_works/completed_projects_list
+
+https://www.3darchidesigner.com/archidesignerjp/tour/tadao-ando-architect-associates/
+
 # 4
 
 Tomishima House and Atelier in Oyodo I, II, Annex
+
+https://www.re-thinkingthefuture.com/case-studies/a5741-tomishima-house-by-tadao-ando-the-haiku-effect/
+
+https://signepelne.wixsite.com/signepelne/tomishima-house
 
 Shortly after completing Tomishima House, his first work, Tadao Ando bought the property to turn it into his atelier. The subsequent extensions were carried out in different phases, producing a discontinuous and labyrinthine space that is a long way from functional rationality.
 
@@ -60,6 +68,96 @@ In summary, Tadao Ando’s cherry blossom tree planting activity in Osaka is a l
 
 # 5
 
-Children’s Book Forest Nakanoshima
+Nakanoshima Children’s Book Forest, Osaka
+
+https://arquitecturaviva.com/works/biblioteca-infantil-nakanoshima-osaka
 
 https://www.birthday-donation.jp/en/column/c009/
+
+https://maps.apple/p/xeT.ZmeMSNTAzE
+
+
+
+
+# 6 Oxy
+
+The OKY Unagidani Building (also written as OXY Unagidani, OXY鰻谷) is a commercial facility in Osaka designed by Tadao Ando, completed in 1986. It is located in the Higashi-Shinsaibashi area, a central and lively district known for retail and nightlife.
+
+Location Details
+Address: 1-19-15 Higashi-Shinsaibashi, Chuo-ku, Osaka, Japan
+
+Total floor area: 473 m²
+
+This building is part of a cluster of Ando’s works in the Unagidani ("eel valley") sub-area of Shinsaibashi, clustered with Galleria Akka and BIGI 3rd.
+
+Architectural Summary
+Design: OKY Unagidani is characterized by a cubic concrete box into which an L-shaped concrete wall is inserted.
+
+The space between the cubic shell and the inner L-wall accommodates circulation (stairs and passages), creating dynamic pathways and layered light effects despite a compact footprint.
+
+The structure reflects Ando’s minimalist ethos and mastery of light, concrete, and movement within constrained urban sites.
+
+Notable Features
+Material: Exposed concrete, characteristic of Ando’s style.
+
+Urban Context: It exemplifies spatial complexity and fluidity even in small, dense commercial sites—a recurring theme in his urban work.
+
+Visibility: While primarily functional as a retail/commercial site, the building is frequently discussed in architectural guides and enthusiast blogs as many Ando fans walk the Unagidani area to see a concentration of his urban projects.
+
+Visiting
+OKY Unagidani remains open for commercial use, so visitors can view the exterior and sometimes interior circulation spaces. It is a short walk from Galleria Akka, offering a chance to experience Ando’s concrete labyrinths within Osaka’s lively shopping enclave.
+
+34.674731, 135.502670
+
+maps://maps.apple/p/ETfIBr4e3fnkkz
+https://maps.apple/p/j0pynMvmy-ovLQ
+
+https://www.google.com/maps/place/1-ch%C5%8Dme-19-15+Higashishinsaibashi,+Chuo+Ward,+Osaka,+542-0083,+Jap%C3%B3n/@34.6747209,135.5025449,3a,75y,161.43h,105.91t/data=!3m7!1e1!3m5!1sdqg9DHZohT_RrWZRCLMV6g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-15.914914892398969%26panoid%3Ddqg9DHZohT_RrWZRCLMV6g%26yaw%3D161.43056576043563!7i16384!8i8192!4m6!3m5!1s0x6000e7173eeb4583:0x798d3c5ffb90daae!8m2!3d34.6746092!4d135.5025951!16s%2Fg%2F12hpgr3cd?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D
+
+http://uratti.web.fc2.com/architecture/ando/unagi.htm
+
+https://www.bridgemanimages.com/en/ando/raika-headquarters-oxy-gallery-in-osaka-japan-architect-tadao-ando-1989/photograph/asset/4563932
+
+http://www.arcstyle.com/osaka/130_oxy.html
+
+
+# 7 
+
+House 4x4
+
+https://arquitecturaviva.com/works/casa-4x4-kobe-
+
+# 8
+Osaka Prefectural Sayamaike Museum
+
+https://voyapon.com/tadao-ando-osaka/
+
+# 9
+
+Chaska Chayamachi Complex
+
+https://voyapon.com/tadao-ando-osaka/
+
+# 10
+
+Hirabayashi House
+
+https://ofhouses.com/post/153894407990/374-tadao-ando-interpenetration-hirabayashi
+
+# 11
+
+Manabe House /// Tezukayama, Osaka, Japan 
+
+https://ofhouses.com/post/154018902714/375-tadao-ando-manabe-house-tezukayama
+
+# 12
+
+Izutzu House
+
+
+
+https://seearch.es/obra/viviendas-kujo-casa-izutsu
+
+https://maps.apple.com/place?address=6-18,%20Honden%203-Ch%C5%8Dme,%20Nishi,%20Osaka,%20Osaka,%20Japan%20550-0022&coordinate=34.677550,135.474311&name=6-18,%20Honden%203-Ch%C5%8Dme&map=explore
+
+34.677551, 135.474313

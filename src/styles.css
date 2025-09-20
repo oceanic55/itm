@@ -380,6 +380,65 @@ body {
     text-decoration: underline;
 }
 
+/* Apple Maps specific byline styles - duplicate of .byline with same properties */
+.apple-maps {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 2px;
+}
+
+.apple-maps .byline-by {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.apple-maps .plus-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    margin: 0 4px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+}
+
+.apple-maps .plus-icon svg {
+    width: 9px;
+    height: 9px;
+}
+
+.apple-maps .plus-icon svg path {
+    fill: currentColor;
+    transition: fill 0.2s ease;
+}
+
+.apple-maps .plus-icon:hover {
+    background: #6d28d9;
+    border-color: #6d28d9;
+}
+
+.apple-maps .plus-icon:hover svg path {
+    fill: white !important;
+}
+
+.apple-maps .author-name {
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.apple-maps .author-name:hover {
+    text-decoration: underline;
+}
+
 .date {
     color: #666;
     font-size: 13px;

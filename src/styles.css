@@ -295,6 +295,16 @@ body {
     text-decoration: underline;
 }
 
+.current-page {
+    color: #ff6600 !important;
+    cursor: default;
+    pointer-events: none;
+}
+
+.current-page:hover {
+    text-decoration: none !important;
+}
+
 /* Article Header */
 .article-header {
     margin-bottom: 40px;
